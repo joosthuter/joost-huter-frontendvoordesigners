@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Drag'n'Drop</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <ul>
+
+        <li>
+            <div id="li1" draggable="true" ondragstart="dragstart_handler(event);">
+                <p>Dani California</p>
+            </div>
+        </li>
+        <li id="target1" ondrop="dropOne_handler(event);" ondragover="dragoverOne_handler(event);">
+            <div id="drop1" class="dropzone"></div>
+        </li>
+        <li>
+            <div id="li2" draggable="true" ondragstart="dragstart_handler(event);">
+                <p>Wet Sand</p>
+            </div>
+        </li>
+        <li id="target2" ondrop="dropTwo_handler(event);" ondragover="dragoverTwo_handler(event);" ondragleave="dragleave(event);">
+            <div id="drop2" class="dropzone"></div>
+        </li>
+        <li>
+            <div id="li3" draggable="true" ondragstart="dragstart_handler(event);">
+                <p>Californication</p>
+            </div>
+        </li>
+    </ul>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
